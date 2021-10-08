@@ -637,7 +637,7 @@ p {
             background-size: 100%;
         }
         .owl-prev {
-            background: url("/assets/images/pictures/next.png") no-repeat;
+            background: url("./assets/images/pictures/next.png") no-repeat;
             left: 0;
             background-size: 100%;
             span {
@@ -651,7 +651,7 @@ p {
             }
         }
         .owl-next {
-            background: url("/assets/images/pictures/pev.png") no-repeat;
+            background: url("./assets/images/pictures/pev.png") no-repeat;
             right: 0;
             background-size: 100%;
             span {
