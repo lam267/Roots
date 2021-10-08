@@ -11290,7 +11290,7 @@ p {
     justify-content: center;
     align-items: center;
     height: 45px;
-    width: 50%;
+    width: 22%;
     border-radius: 6px;
     margin: 0 auto; }
     .btn_more:hover {
@@ -11584,12 +11584,12 @@ p {
 .owl-carousel .owl-nav .owl-prev {
   position: absolute;
   top: 50%;
-  transform: translateY(-41%);
-  -webkit-transform: translateY(-41%);
-  -khtml-transform: translateY(-41%);
-  -moz-transform: translateY(-41%);
-  -ms-transform: translateY(-41%);
-  -o-transform: translateY(-41%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -khtml-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   width: 200px;
   height: 300px;
   background-size: 100%; }

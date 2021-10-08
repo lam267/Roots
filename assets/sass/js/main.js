@@ -10,7 +10,7 @@ $(document).ready(function() {
         loop: true,
         navigation: true,
         nav: true,
-        dots: true,
+        dots: false,
         items: 1,
         responsive: {
             0: {
