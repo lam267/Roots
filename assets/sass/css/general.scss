@@ -248,7 +248,7 @@ p {
         display: flex;
         @include flex-position(center);
         height: 45px;
-        width: 22%;
+        width: 30%;
         border-radius: 6px;
         margin: 0 auto;
         &:hover {
@@ -496,6 +496,7 @@ p {
                 }
             }
             .cate-support {
+                margin-bottom: 20px;
                 @include flex-position(space-between);
                 h3 {
                     font-weight: bold;
@@ -514,6 +515,7 @@ p {
                 }
             }
             .detail {
+                margin-bottom: 20px;
                 h3 {
                     font-family: "Lucida Grande";
                     font-weight: bold;
@@ -529,6 +531,7 @@ p {
                 }
             }
             .search_form {
+                margin-bottom: 20px;
                 .input-wrapper {
                     width: 95%;
                     height: 45px;

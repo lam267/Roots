@@ -11290,7 +11290,7 @@ p {
     justify-content: center;
     align-items: center;
     height: 45px;
-    width: 22%;
+    width: 30%;
     border-radius: 6px;
     margin: 0 auto; }
     .btn_more:hover {
@@ -11486,6 +11486,7 @@ p {
       color: #2a383a;
       text-align: justify; }
     .footer-center__content .cate-support {
+      margin-bottom: 20px;
       justify-content: space-between;
       align-items: center; }
       .footer-center__content .cate-support h3 {
@@ -11499,34 +11500,38 @@ p {
         font-size: 16px;
         line-height: 28px;
         color: #2a383a; }
-    .footer-center__content .detail h3 {
-      font-family: "Lucida Grande";
-      font-weight: bold;
-      font-size: 26px;
-      line-height: 34px;
-      color: #2a383a; }
-    .footer-center__content .detail p {
-      font-family: "Cabin";
-      font-size: 16px;
-      line-height: 19px;
-      color: #2a383a; }
-    .footer-center__content .search_form .input-wrapper {
-      width: 95%;
-      height: 45px; }
-      .footer-center__content .search_form .input-wrapper input {
-        width: 79%;
-        padding: 12px 20px;
-        border: 1px solid #4B845E;
-        border-radius: 4px 0 0 4px; }
-        .footer-center__content .search_form .input-wrapper input::placeholder {
-          font-family: 'Cabin';
-          font-weight: 400;
-          line-height: 19px; }
-      .footer-center__content .search_form .input-wrapper button {
-        border: none;
-        width: 21%;
-        background-color: #4B845E;
-        border-radius: 0px 4px 4px 0px; }
+    .footer-center__content .detail {
+      margin-bottom: 20px; }
+      .footer-center__content .detail h3 {
+        font-family: "Lucida Grande";
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 34px;
+        color: #2a383a; }
+      .footer-center__content .detail p {
+        font-family: "Cabin";
+        font-size: 16px;
+        line-height: 19px;
+        color: #2a383a; }
+    .footer-center__content .search_form {
+      margin-bottom: 20px; }
+      .footer-center__content .search_form .input-wrapper {
+        width: 95%;
+        height: 45px; }
+        .footer-center__content .search_form .input-wrapper input {
+          width: 79%;
+          padding: 12px 20px;
+          border: 1px solid #4B845E;
+          border-radius: 4px 0 0 4px; }
+          .footer-center__content .search_form .input-wrapper input::placeholder {
+            font-family: 'Cabin';
+            font-weight: 400;
+            line-height: 19px; }
+        .footer-center__content .search_form .input-wrapper button {
+          border: none;
+          width: 21%;
+          background-color: #4B845E;
+          border-radius: 0px 4px 4px 0px; }
     .footer-center__content .social {
       justify-content: center;
       align-items: center; }
