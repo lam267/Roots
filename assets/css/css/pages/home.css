@@ -415,10 +415,9 @@
       margin: 0 auto;
       width: auto;
       margin: 0;
-      background: linear-gradient(0deg, #E02020 0%, #FA6400 29.86%, #F7B500 47.78%, #6236FF 76.35%, #B620E0 100%);
+      border: 1px solid;
       border-radius: 50%;
-      display: inline-block;
-      border: 1px solid transparent; }
+      border-image: linear-gradient(180deg, #E02020 0%, #FA6400 29.86%, #F7B500 47.78%, #6236FF 76.35%, #B620E0 100%); }
     .main-testimonial .testimonial_content .info-name {
       font-weight: bold;
       font-size: 18px;
@@ -453,4 +452,4 @@
       .main-testimonial .testimonial_content .interact .item span {
         margin-left: 15px; }
 
-/*# sourceMappingURL=home.min.css.map */
+/*# sourceMappingURL=home.css.map */

@@ -62,9 +62,9 @@
                 }
             }
             .content-detail {
-                @include webkit-box(2);
                 font-weight: 900;
                 font-size: 36px;
+                max-width: 732px;
                 line-height: 55px;
                 color: $title;
                 margin: 0 auto;
@@ -88,7 +88,7 @@
         &__title {}
         &__list {
             .product {
-                &-text {
+                &-text--sale {
                     display: none;
                 }
             }
@@ -131,6 +131,7 @@
             img {
                 @include image;
             }
+            .item-trademark {}
         }
     }
     &-testimonial {
@@ -158,14 +159,16 @@
                     @include image;
                     width: auto;
                     margin: 0;
-                    border: 1px solid;
+                    background: linear-gradient( 0deg, #E02020 0%, #FA6400 29.86%, #F7B500 47.78%, #6236FF 76.35%, #B620E0 100%);
                     border-radius: 50%;
-                    border-image: linear-gradient(180deg, #E02020 0%, #FA6400 29.86%, #F7B500 47.78%, #6236FF 76.35%, #B620E0 100%);
+                    display: inline-block;
+                    border: 1px solid transparent;
                 }
                 &-name {
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 28px;
+                    display: flex;
                     .date-time {
                         font-weight: 400;
                         line-height: 24px;

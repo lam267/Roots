@@ -24,6 +24,25 @@ $(document).ready(function() {
             }
         }
     });
+    $(' .main-trademark__list .owl-carousel').owlCarousel({
+        loop: true,
+        navigation: true,
+        dots: false,
+        margin: 36,
+        items: 5,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 5
+            }
+        }
+
+    });
     $('body').on('click', '.nav-mobi ', function(e) {
         $('.header-nav__link  .list-link ').toggleClass('active');
     });

@@ -207,7 +207,8 @@ p {
     display: flex;
     @include flex-position(center);
     @include css3(transition, 0.5s);
-    min-width: 100px;
+    max-width: 157px;
+    width: 100%;
     border: none;
     &_blue,
     &-contact {
@@ -228,7 +229,7 @@ p {
         color: $title_color;
         @include flex-position(center);
         height: 47px;
-        width: 49%;
+        width: 100%;
         border-radius: 2px;
         border: 1px solid $title_color;
         &:hover {
@@ -247,8 +248,9 @@ p {
         color: $text_color;
         display: flex;
         @include flex-position(center);
-        height: 45px;
-        width: 30%;
+        max-height: 45px;
+        width: 100%;
+        max-width: 153px;
         border-radius: 6px;
         margin: 0 auto;
         &:hover {
@@ -282,12 +284,12 @@ p {
 .header {
     &-top {
         padding: 12px 0;
+        text-align: center;
         background: $background_color;
         &__box {
             @include flex-position(center);
         }
         &__title {
-            padding-left: 160px;
             a {
                 text-decoration: underline;
                 color: $title_color;
@@ -311,7 +313,7 @@ p {
                 &.map a::after {
                     position: absolute;
                     right: -8px;
-                    top: 4px;
+                    top: 3px;
                     content: "\f0d7";
                     font-family: "Font Awesome 5 Pro";
                     font-weight: 900;
@@ -361,13 +363,13 @@ p {
                 input {
                     border: 1px solid $title_color;
                     width: 80%;
-                    padding: 6px 12px;
+                    padding: 10px 12px;
                     border-radius: 50px 0px 0px 50px;
                 }
                 button {
                     background-color: $title_color;
                     border: 1px solid $title_color;
-                    padding: 6px 14px;
+                    padding: 10px 14px;
                     border-radius: 0px 50px 50px 0px;
                 }
             }
@@ -399,15 +401,14 @@ p {
             @include flex-position(space-between);
             .item-nav {
                 position: relative;
-                transition: width 0.35s ease-in-out;
+                @include css3(transition, 0.5s);
+                &:hover>a {
+                    color: $text-color;
+                    background: $btn_hover;
+                }
                 a {
                     padding: 15px 22px;
                     display: block;
-                    transition: width 0.35s ease-in-out;
-                    &:hover {
-                        color: $text-color;
-                        background: $btn_hover;
-                    }
                 }
                 &:first-child,
                 &:last-child {
@@ -424,9 +425,13 @@ p {
                     opacity: 0;
                     visibility: hidden;
                     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-                    a {
+                    li a {
                         display: block;
                         padding: 10px 20px;
+                        &:hover {
+                            color: $text-color;
+                            background: $btn_hover;
+                        }
                     }
                 }
                 &:hover {
@@ -496,7 +501,6 @@ p {
                 }
             }
             .cate-support {
-                margin-bottom: 20px;
                 @include flex-position(space-between);
                 h3 {
                     font-weight: bold;
@@ -515,7 +519,6 @@ p {
                 }
             }
             .detail {
-                margin-bottom: 20px;
                 h3 {
                     font-family: "Lucida Grande";
                     font-weight: bold;
@@ -531,9 +534,9 @@ p {
                 }
             }
             .search_form {
-                margin-bottom: 20px;
                 .input-wrapper {
-                    width: 95%;
+                    max-width: 445px;
+                    width: 100%;
                     height: 45px;
                     input {
                         width: 79%;
@@ -541,7 +544,7 @@ p {
                         border: 1px solid $title_color;
                         border-radius: 4px 0 0 4px;
                         &::placeholder {
-                            font-family: 'Cabin';
+                            font-family: "Cabin";
                             font-weight: 400;
                             line-height: 19px;
                         }
@@ -599,6 +602,13 @@ p {
     >div {
         margin-bottom: 5px;
     }
+    div:nth-child(5) {
+        .blog-posts {
+            &__content {
+                background: #E1EDE5;
+            }
+        }
+    }
 }
 
 // slider
@@ -611,9 +621,10 @@ p {
         left: 50%;
         transform: translateX(-50%);
         .owl-dot {
+            box-sizing: content-box;
             width: 14px;
             height: 14px;
-            background-color: $boder-solid;
+            background-color: $text-color;
             border-radius: 50%;
             border: 1px solid $boder-solid;
             margin-right: 5px;
@@ -637,7 +648,7 @@ p {
             background-size: 100%;
         }
         .owl-prev {
-            background: url("/assets/images/pictures/next.png") no-repeat;
+            background: url("../images/pictures/next.png") no-repeat;
             left: 0;
             background-size: 100%;
             span {
@@ -651,7 +662,7 @@ p {
             }
         }
         .owl-next {
-            background: url("/assets/images/pictures/pev.png") no-repeat;
+            background: url("../images/pictures/pev.png") no-repeat;
             right: 0;
             background-size: 100%;
             span {
@@ -669,7 +680,7 @@ p {
 
 .product {
     margin-top: 20px;
-    height: 403px;
+    min-height: 403px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     &_image {
         position: relative;
@@ -691,16 +702,21 @@ p {
         @include flex-position(center);
         border-radius: 6px;
         background: $title_color;
-        border: 1px solid $title_color;
+        background: $title_color;
         &--sale {
             height: 29px;
             width: 53px;
-            left: 10px;
-            top: 10px;
+            left: 14px;
+            top: 11px;
+            span {
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 28px;
+            }
         }
         &--add {
-            width: 157px;
-            height: 46px;
+            min-width: 157px;
+            min-height: 46px;
             top: 50%;
             left: 50%;
             @include css3(transform,

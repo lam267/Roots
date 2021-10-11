@@ -11256,8 +11256,7 @@ p {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  max-width: 157px;
-  width: 100%;
+  min-width: 100px;
   border: none; }
   .btn_blue, .btn-contact {
     background: #465cfb;
@@ -11274,7 +11273,7 @@ p {
     justify-content: center;
     align-items: center;
     height: 47px;
-    width: 100%;
+    width: 49%;
     border-radius: 2px;
     border: 1px solid #4B845E; }
     .btn_view:hover {
@@ -11319,14 +11318,15 @@ p {
 
 .header-top {
   padding: 12px 0;
-  text-align: center;
   background: #f5f5f5; }
   .header-top__box {
     justify-content: center;
     align-items: center; }
-  .header-top__title a {
-    text-decoration: underline;
-    color: #4B845E; }
+  .header-top__title {
+    padding-left: 160px; }
+    .header-top__title a {
+      text-decoration: underline;
+      color: #4B845E; }
   .header-top__support {
     padding-left: 60px;
     display: flex;
@@ -11519,8 +11519,7 @@ p {
       line-height: 19px;
       color: #2a383a; }
     .footer-center__content .search_form .input-wrapper {
-      max-width: 445px;
-      width: 100%;
+      width: 95%;
       height: 45px; }
       .footer-center__content .search_form .input-wrapper input {
         width: 79%;
@@ -11606,7 +11605,7 @@ p {
   height: 300px;
   background-size: 100%; }
 .owl-carousel .owl-nav .owl-prev {
-  background: url("../images/pictures/next.png") no-repeat;
+  background: url("/assets/images/pictures/next.png") no-repeat;
   left: 0;
   background-size: 100%; }
   .owl-carousel .owl-nav .owl-prev span {
@@ -11619,7 +11618,7 @@ p {
       font-size: 20px;
       color: #ffffff; }
 .owl-carousel .owl-nav .owl-next {
-  background: url("../images/pictures/pev.png") no-repeat;
+  background: url("/assets/images/pictures/pev.png") no-repeat;
   right: 0;
   background-size: 100%; }
   .owl-carousel .owl-nav .owl-next span {
@@ -11741,4 +11740,4 @@ p {
     padding-left: 0;
     padding-right: 0; }
 
-/*# sourceMappingURL=general.min.css.map */
+/*# sourceMappingURL=general.css.map */
