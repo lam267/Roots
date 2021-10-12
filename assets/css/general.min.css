@@ -11535,7 +11535,8 @@ p {
         border: none;
         width: 21%;
         background-color: #4B845E;
-        border-radius: 0px 4px 4px 0px; }
+        border-radius: 0px 4px 4px 0px;
+        cursor: pointer; }
     .footer-center__content .social {
       justify-content: center;
       align-items: center; }
